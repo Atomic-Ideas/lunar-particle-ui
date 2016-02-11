@@ -1,0 +1,70 @@
+@import "ui-variables";
+
+.tree-view-scroller {
+  background: @tree-view-background-color !important;
+}
+
+.tree-view {
+  font-size: @font-size;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('atom://lunar-particle-ui/imgs/stars.png') repeat !important;
+
+  .selected:before {
+    background: @tree-view-selected-before-color;
+    box-shadow: none;
+  }
+}
+
+// FILE DIRECTORY OPEN
+.expanded {
+  .header {
+    .icon-file-directory {
+      &:before {
+        color: @icon-color-file-directory;
+        content: '\f0b1';
+      }
+    }
+  }
+}
+
+// FILE DIRECTORY CLOSED
+.collapsed {
+  .header {
+    .icon-file-directory {
+      &:before {
+        color: @icon-color-file-directory;
+        content: '\f016';
+      }
+    }
+  }
+}
+
+.tree-view-resizer {
+  .tree-view-resize-handle {
+    width: 8px;
+  }
+}
+
+.focusable-panel {
+  opacity: 1;
+  box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
+
+  &:focus {
+    background: #282828;
+
+    .selected:before {
+      background: @background-color-selected;
+    }
+  }
+}
+
+[data-show-on-right-side=true] {
+  .tree-view .selected:before,
+  .focusable-panel {
+    box-shadow: inset 3px 0 0 rgba(0,0,0,.5);
+  }
+}
+
+.list-inline.tab-bar.inset-panel {
+  background: rgba(0,0,0,0);
+  margin-bottom: 0;
+}

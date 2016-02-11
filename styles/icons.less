@@ -1,0 +1,121 @@
+.name.icon {
+  // DEFAULT ICONS TEXT
+  font-family: mono, monospace, arial;
+
+  // DEFAULT ICONS LOGO
+  &:before {
+    color: @text-color-info;
+  }
+
+  // PROJECT FILE-DIRECTORY
+  &.icon-file-directory {
+    // TEXT
+    font-weight: bolder;
+    // ICON
+    &:before {
+      color: @icon-color-file-directory;
+      content: '\f016';
+    }
+  }
+
+  // JAVASCRIPT
+  &[data-name$='.js']:before {
+    color: @icon-color-js;
+  }
+
+  // BOWER
+  &[data-name='.bowerrc']:before {
+    color: @icon-color-bower;
+  }
+  &[data-name='bower.json']:before {
+    color: @icon-color-bower;
+  }
+
+  // CSS
+  &[data-name$='.css']:before {
+    color: @icon-color-css;
+  }
+
+  // EJS
+  &[data-name$='.ejs']:before {
+    color: @icon-color-ejs;
+  }
+
+  // Grunt
+  &[data-name^='grunt']:before {
+    color: @icon-color-grunt;
+  }
+
+  // Gulp
+  &[data-name^='gulp']:before {
+    color: @icon-color-gulp;
+  }
+
+  // HTML
+  &[data-name$='.html']:before {
+    color: @icon-color-html;
+  }
+
+  // HTML
+  &[data-name^='favicon']:before {
+    color: @icon-color-favico;
+  }
+
+  // @icon-color-img: #35BAA0; // Images
+
+  // Jade
+  &[data-name^='favicon']:before {
+    color: @icon-color-jade;
+  }
+
+  // @icon-color-js: #1cb5f6; // JavaScript
+  // @icon-color-json: #F1D06D; // JSON
+  // @icon-color-karma: #35b99f; // KARMA
+  // @icon-color-less: #29A8DE; // Less
+  // @icon-color-license: #BCA784; // LICENSE
+
+  // MARKDOWN
+  &[data-name$='.md']:before {
+    color: @text-color;
+    content: '\f0c9';
+  }
+
+  // @icon-color-npm: #CD3631; // NPM
+
+  // PHP
+  &[data-name$='.php']:before {
+    color: @icon-color-php;
+    content: '\f0c9';
+  }
+
+  // PROJECT / REPO ICON
+  &.icon-repo {
+    // TEXT
+    font-weight: bolder;
+    // ICON
+    &:before {
+      color: @icon-color-repo;
+      content: '\f00a';
+    }
+  }
+
+  // SASS
+  &[data-name^='scss']:before {
+    color: @icon-color-sass;
+  }
+
+  // SQL
+  &[data-name^='sql']:before {
+    color: @icon-color-sql;
+  }
+
+  @icon-color-settings: #AAA;
+  @icon-color-xml: #F79451; // XML
+  @icon-color-yml: #542d8d; // YML
+
+  // SQL
+  &[data-name$='.sql']:before {
+    color: @icon-color-sql;
+    content: '\f0c9';
+  }
+}

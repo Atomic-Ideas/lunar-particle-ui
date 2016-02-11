@@ -1,0 +1,134 @@
+// Colors
+
+@text-color: #aaa;
+@text-color-subtle:     fadeout(@text-color, 40%);
+@text-color-highlight:  lighten(@text-color, 20%);
+@text-color-selected:   white;
+
+@text-color-info:    rgb(100, 148, 237);
+@text-color-success: rgb(115, 201, 144);
+@text-color-warning: rgb(226, 192, 141);
+@text-color-error:   rgb(255, 99, 71);
+
+@text-color-ignored: @text-color-subtle;
+@text-color-added: @text-color-success;
+@text-color-renamed: @text-color-info;
+@text-color-modified: @text-color-warning;
+@text-color-removed: @text-color-error;
+
+@background-color-info:    rgb(0, 136, 255);
+@background-color-success: rgb(32, 182, 132);
+@background-color-warning: rgb(204, 133, 51);
+@background-color-error:   rgb(217, 38, 38);
+@background-color-highlight: rgba(255, 255, 255, 0.07);
+@background-color-selected: #4182C4;
+
+@app-background-color: rgba(0, 0, 0, 0.5);
+
+@base-background-color: @app-background-color;
+@base-border-color: #333;
+
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color: @base-background-color;
+
+@input-background-color: #333;
+@input-border-color: @base-border-color;
+
+@tool-panel-background-color: #1d1f21;
+@tool-panel-border-color: @base-border-color;
+
+@inset-panel-background-color: #161719;
+@inset-panel-border-color: @base-border-color;
+
+@panel-heading-background-color: #43484d;
+@panel-heading-border-color: fadein(@base-border-color, 10%);
+
+@overlay-background-color: #202123;
+@overlay-border-color: @background-color-highlight;
+
+@button-background-color: #43484d;
+@button-background-color-hover: lighten(@button-background-color, 5%);
+@button-background-color-selected: #5c6064;
+@button-border-color: @base-border-color;
+
+@tab-bar-background-color: #222;
+@tab-bar-border-color: darken(@tab-background-color-active, 10%);
+@tab-background-color: #333;
+@tab-background-color-active: #222;
+@tab-border-color: #484848;
+
+// TREE VIEW
+@tree-view-background-color: #303030;
+@tree-view-border-color: @tool-panel-border-color;
+@tree-view-selected-before-color: rgba(0, 84, 171,0.5);
+
+// GUTTER
+@gutter-text-color: #c5c8c6;
+@gutter-text-color-selected: #c5c8c6;
+@gutter-text-cursor-line: rgba(0, 84, 171,0.5);
+
+@scrollbar-background-color: #222425; // Needs to be opaque -> atom/atom/issues/4578
+@scrollbar-color: rgba(92, 92, 92, 0.5);
+
+@ui-site-color-1: @background-color-success; // green
+@ui-site-color-2: @background-color-info; // blue
+@ui-site-color-3: @background-color-warning; // orange
+@ui-site-color-4: #db2ff4; // purple
+@ui-site-color-5: #f5e11d; // yellow
+
+
+// Sizes
+
+@font-size: 11px;
+@input-font-size: 14px;
+
+@disclosure-arrow-size: 12px;
+
+@component-padding: 10px;
+@component-icon-padding: 5px;
+@component-icon-size: 16px;
+@component-line-height: 25px;
+@component-border-radius: 2px;
+
+@tab-height: 26px;
+
+
+// Other
+
+@font-family: 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+
+// GIT FILES COLORS
+
+@git-ignored: #40535B;
+@git-added: rgb(159,202,86);
+@git-renamed: rgb(79,153,211);
+@git-modified: rgb(220,205,105);
+@git-removed: rgb(206,64,69);
+
+// ICONS COLORS
+
+@icon-color-bower: #F0582B; // BOWER
+@icon-color-css: #29A8DE; // CSS
+@icon-color-ejs: #467a39; // EJS
+@icon-color-file-directory: #d57c06; // FILE DIRECTORY
+@icon-color-grunt: #FAA91A; // Grunt
+@icon-color-gulp: #EE4845; // Gulp
+@icon-color-hidden: #40535B; // Hidden files
+@icon-color-html: #F26621; // HTML
+@icon-color-favico: #f1dd3f; // Favicon
+@icon-color-img: #35BAA0; // Images
+@icon-color-jade: #9FCA56; // Jade
+@icon-color-js: #1cb5f6; // JavaScript
+@icon-color-json: #F1D06D; // JSON
+@icon-color-karma: #35b99f; // KARMA
+@icon-color-less: #29A8DE; // Less
+@icon-color-license: #BCA784; // LICENSE
+@icon-color-md: gainsboro; // Markdown
+@icon-color-npm: #CD3631; // NPM
+@icon-color-php: #6C5FA9; // PHP
+@icon-color-repo: gainsboro; // REPOSITORY
+@icon-color-sass: #CE6499; // SASS
+@icon-color-sql: #FAA91A; // SQL
+@icon-color-settings: #AAA;
+@icon-color-xml: #F79451; // XML
+@icon-color-yml: #542d8d; // YML

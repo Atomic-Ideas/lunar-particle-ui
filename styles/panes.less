@@ -1,0 +1,30 @@
+@import "ui-mixins";
+@import "ui-variables";
+@import "buttons";
+
+.pane-item {
+  .panel {
+    border-color: fadeout(@inset-panel-border-color, 30%);
+  }
+}
+
+atom-pane-container {
+  atom-pane {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),
+    url('atom://lunar-particle-ui/imgs/earth.png') space fixed !important;
+
+    &:focus {
+      background-color: @app-background-color;
+    }
+  }
+
+  atom-pane-axis.horizontal > * {
+    border-right: 1px solid @pane-item-border-color;
+    &:last-child { border-right: none; }
+  }
+
+  atom-pane-axis.vertical > * {
+    border-bottom: 1px solid @pane-item-border-color;
+    &:last-child { border-bottom: none; }
+  }
+}

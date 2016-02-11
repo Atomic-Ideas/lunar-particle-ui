@@ -1,0 +1,25 @@
+@import "ui-mixins";
+@import "ui-variables";
+
+.status { .text(normal); }
+.status-added {
+  .name.icon {
+    &:after {
+      margin-left: 4px;
+      content: '\f020';
+    }
+  }
+  // .text(success);
+}
+.status-ignored { .text(subtle); }
+.status-modified {
+  .name.icon {
+    &:after {
+      margin-left: 4px;
+      content: '\f020';
+    }
+  }
+  .text(warning);
+}
+.status-removed { .text(error); }
+.status-renamed { .text(info); }
