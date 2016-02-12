@@ -12,7 +12,7 @@
 
 ![Screenshot](Screenshot from 2016-02-12-git-status.png)
 
-**Awesome colors!**
+**Awesome layout!**
 
 ![Screenshot](Screenshot from 2016-02-12-part.png)
 
