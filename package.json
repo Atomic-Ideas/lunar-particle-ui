@@ -4,7 +4,7 @@
   "version": "0.2.0",
   "description": "Dark UI theme based on Atom Dark and Seti",
   "license": "MIT",
-  "repository": "https://github.com/atomicstuff/lunar-particle-ui",
+  "repository": "https://github.com/Atomic-Ideas/lunar-particle-ui",
   "engines": {
     "atom": ">0.40.0"
   }
