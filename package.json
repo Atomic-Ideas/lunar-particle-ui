@@ -1,7 +1,7 @@
 {
   "name": "lunar-particle-ui",
   "theme": "ui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Dark UI theme based on Atom Dark and Seti",
   "license": "MIT",
   "repository": "https://github.com/atomicstuff/lunar-particle-ui",
