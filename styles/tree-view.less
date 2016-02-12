@@ -14,27 +14,40 @@
   }
 }
 
+// FOLDERS ARROW
+.header.list-item {
+  &:before {
+    color: @text-color;
+  }
+}
+
 // FILE DIRECTORY OPEN
-.expanded {
-  .header {
-    .icon-file-directory {
-      &:before {
-        color: @icon-color-file-directory;
-        content: '\f0b1';
-      }
-    }
+.expanded .header .icon-file-directory {
+  &:before {
+    font-size: 18px;    
+    content: @icon-file-directory-expanded;
   }
 }
 
 // FILE DIRECTORY CLOSED
-.collapsed {
-  .header {
-    .icon-file-directory {
-      &:before {
-        color: @icon-color-file-directory;
-        content: '\f016';
-      }
-    }
+.collapsed .header .icon-file-directory {
+  &:before {
+    content: @icon-file-directory-collapsed;
+  }
+}
+
+// REPO OPEN
+.expanded .header .icon-repo {
+  &:before {
+    font-size: 18px;
+    content: @icon-repo-expanded;
+  }
+}
+
+// REPO CLOSED
+.collapsed .header .icon-repo {
+  &:before {
+    content: @icon-repo-collapsed;
   }
 }
 

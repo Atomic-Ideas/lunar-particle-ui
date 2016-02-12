@@ -1,25 +1,48 @@
 @import "ui-mixins";
 @import "ui-variables";
 
-.status { .text(normal); }
-.status-added {
-  .name.icon {
+// .status { .text(normal); }
+// .status-added { .text(success); }
+// .status-ignored { .text(subtle); }
+// .status-modified { .text(warning); }
+// .status-removed { .text(error); }
+// .status-renamed { .text(info); }
+
+.file.status-added .name.icon {
+    color: @text-color !important;
     &:after {
+      color: @text-color-added !important;
+      font-family: lunar-particle;
       margin-left: 4px;
-      content: '\f020';
-    }
+      content: @icon-git-status;
   }
-  // .text(success);
 }
-.status-ignored { .text(subtle); }
-.status-modified {
-  .name.icon {
+
+.directory.status-added .icon-file-directory {
+    color: @text-color !important;
     &:after {
+      color: @text-color-added !important;
+      font-family: lunar-particle;
       margin-left: 4px;
-      content: '\f020';
-    }
+      content: @icon-git-status;
   }
-  .text(warning);
 }
-.status-removed { .text(error); }
-.status-renamed { .text(info); }
+
+.file.status-modified .name.icon {
+    &:after {
+      color: @text-color-modified !important;
+      font-family: lunar-particle;
+      margin-left: 4px;
+      content: @icon-git-status;
+    }
+}
+
+.directory.status-modified .icon-file-directory {
+    color: @text-color !important;
+    &:after {
+      color: @text-color-modified !important;
+      font-family: lunar-particle;
+      margin-left: 4px;
+      content: @icon-git-status;
+  }
+}

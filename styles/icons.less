@@ -1,10 +1,24 @@
+@font-face {
+	font-family: 'lunar-particle';
+	src:url('atom://lunar-particle-ui/styles/_fonts/lunar-particle.eot');
+	src:url('atom://lunar-particle-ui/styles/_fonts/lunar-particle.eot') format('embedded-opentype'),
+		url('atom://lunar-particle-ui/styles/_fonts/lunar-particle.woff') format('woff'),
+		url('atom://lunar-particle-ui/styles/_fonts/lunar-particle.ttf') format('truetype'),
+		url('atom://lunar-particle-ui/styles/_fonts/lunar-particle.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .name.icon {
   // DEFAULT ICONS TEXT
   font-family: mono, monospace, arial;
 
   // DEFAULT ICONS LOGO
   &:before {
+		font-family: lunar-particle;
+		// font-size: 20px;
     color: @text-color-info;
+		content: @icon-default;
   }
 
   // PROJECT FILE-DIRECTORY
@@ -14,108 +28,151 @@
     // ICON
     &:before {
       color: @icon-color-file-directory;
-      content: '\f016';
     }
   }
+
+	// PROJECT / FILE-DIRECTORY REPO
+	&.icon-repo {
+		// TEXT
+		font-weight: bolder;
+		// ICON
+		&:before {
+			color: @icon-color-repo;
+		}
+	}
 
   // JAVASCRIPT
   &[data-name$='.js']:before {
     color: @icon-color-js;
+    content: @icon-js;
+  }
+
+  // JSON
+  &[data-name$='.json']:before {
+    color: @icon-color-json;
+    content: @icon-json;
   }
 
   // BOWER
-  &[data-name='.bowerrc']:before {
+  &[data-name*='bower']:before {
     color: @icon-color-bower;
-  }
-  &[data-name='bower.json']:before {
-    color: @icon-color-bower;
+		content: @icon-bower;
   }
 
   // CSS
   &[data-name$='.css']:before {
     color: @icon-color-css;
+    content: @icon-css;
   }
 
   // EJS
   &[data-name$='.ejs']:before {
     color: @icon-color-ejs;
+    content: @icon-ejs;
+  }
+
+	// FAVICON
+	&[data-name^='favicon']:before {
+		color: @icon-color-favico;
+	}
+
+  // Git
+  &[data-name='.gitignore']:before {
+    color: @icon-color-git;
+    content: @icon-git-files;
   }
 
   // Grunt
-  &[data-name^='grunt']:before {
+  &[data-name*='grunt']:before, &[data-name*='Grunt']:before {
     color: @icon-color-grunt;
+    content: @icon-grunt;
   }
 
   // Gulp
-  &[data-name^='gulp']:before {
+  &[data-name*='gulp']:before, &[data-name*='Gulp']:before {
     color: @icon-color-gulp;
+    content: @icon-gulp;
   }
 
   // HTML
   &[data-name$='.html']:before {
     color: @icon-color-html;
+    content: @icon-html;
   }
 
-  // HTML
-  &[data-name^='favicon']:before {
-    color: @icon-color-favico;
-  }
-
-  // @icon-color-img: #35BAA0; // Images
+	// Images
+	&.icon-file-media:before {
+		color: @icon-color-img; // Images
+		content: @icon-img; // Images
+	}
 
   // Jade
-  &[data-name^='favicon']:before {
+  &[data-name$='.jade']:before {
     color: @icon-color-jade;
+    content: @icon-jade;
   }
 
-  // @icon-color-js: #1cb5f6; // JavaScript
   // @icon-color-json: #F1D06D; // JSON
   // @icon-color-karma: #35b99f; // KARMA
-  // @icon-color-less: #29A8DE; // Less
   // @icon-color-license: #BCA784; // LICENSE
+
+	// Less
+	&[data-name$='.less']:before {
+		color: @icon-color-less;
+		content: @icon-less;
+	}
 
   // MARKDOWN
   &[data-name$='.md']:before {
-    color: @text-color;
-    content: '\f0c9';
+    color: @icon-color-md;
+    content: @icon-md;
   }
 
-  // @icon-color-npm: #CD3631; // NPM
+	// NPM
+	&[data-name='package.json']:before {
+    color: @icon-color-npm;
+		content: @icon-npm;
+	}
 
   // PHP
   &[data-name$='.php']:before {
     color: @icon-color-php;
-    content: '\f0c9';
+    content: @icon-php;
   }
 
-  // PROJECT / REPO ICON
-  &.icon-repo {
-    // TEXT
-    font-weight: bolder;
-    // ICON
-    &:before {
-      color: @icon-color-repo;
-      content: '\f00a';
-    }
+	// React
+  &[data-name$='.jsx']:before {
+    color: @icon-color-react;
+    content: @icon-react;
   }
 
   // SASS
-  &[data-name^='scss']:before {
+  &[data-name$='.scss']:before {
     color: @icon-color-sass;
+    content: @icon-sass;
   }
 
-  // SQL
-  &[data-name^='sql']:before {
-    color: @icon-color-sql;
-  }
-
-  @icon-color-settings: #AAA;
-  @icon-color-xml: #F79451; // XML
-  @icon-color-yml: #542d8d; // YML
-
-  // SQL
+	// SQL
   &[data-name$='.sql']:before {
     color: @icon-color-sql;
-    content: '\f0c9';
+    content: @icon-sql;
+  }
+
+	// Txt
+  &[data-name$='.txt']:before {
+    color: @icon-color-txt;
+    content: @icon-txt;
+  }
+
+	// XML
+  &[data-name$='.xml']:before {
+    color: @icon-color-xml;
+    content: @icon-xml;
+  }
+
+	// YML
+  &[data-name$='.yml']:before {
+    color: @icon-color-yml;
+    content: @icon-yml;
   }
 }
