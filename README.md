@@ -1,6 +1,6 @@
 Lunar Particle UI Theme
 =========
-This is a dark theme with universe emphasize!
+This is a dark theme with universe emphasize! Let's got coding with stars, buddy!
 
 Description
 ----------------
