@@ -71,6 +71,12 @@
     content: @icon-ejs;
   }
 
+  // Exel
+  &[data-name$='.csv']:before {
+    color: @icon-color-exel;
+    content: @icon-exel;
+  }
+
 	// FAVICON
 	&[data-name^='favicon']:before {
 		color: @icon-color-favico;
@@ -122,6 +128,12 @@
 		content: @icon-less;
 	}
 
+	// Less
+	&[data-name='LICENSE']:before {
+		color: @icon-color-license;
+		content: @icon-license;
+	}
+
   // MARKDOWN
   &[data-name$='.md']:before {
     color: @icon-color-md;
@@ -134,8 +146,8 @@
 		content: @icon-npm;
 	}
 
-  // PHP
-  &[data-name$='.php']:before {
+  // PHP - phar
+  &[data-name$='.php']:before, &[data-name$='.phar']:before {
     color: @icon-color-php;
     content: @icon-php;
   }
