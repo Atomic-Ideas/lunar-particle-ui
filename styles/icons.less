@@ -47,14 +47,16 @@
     content: @icon-js;
   }
 
-  // JSON
-  &[data-name$='.json']:before {
-    color: @icon-color-json;
-    content: @icon-json;
-  }
+	// JSON, CSON
+	&[data-name$='.json']:before,
+	&[data-name$='.cson']:before {
+		color: @icon-color-json;
+		content: @icon-json;
+	}
 
   // BOWER
-  &[data-name*='bower']:before {
+  &[data-name*='bower']:before,
+	&[data-name*='Bower']:before {
     color: @icon-color-bower;
 		content: @icon-bower;
   }
@@ -65,6 +67,24 @@
     content: @icon-css;
   }
 
+  // CoffeeScript
+  &[data-name$='.coffee']:before {
+    color: @icon-color-cs;
+    content: @icon-cs;
+  }
+
+  // CoffeeReact
+  &[data-name$='.cjsx']:before {
+    color: @icon-color-react;
+    content: @icon-react;
+  }
+
+  // CPP
+	  &[data-name$='.cpp']:before {
+    color: @icon-color-cpp;
+    content: @icon-cpp;
+  }
+
   // EJS
   &[data-name$='.ejs']:before {
     color: @icon-color-ejs;
@@ -72,7 +92,12 @@
   }
 
   // Exel
-  &[data-name$='.csv']:before {
+  &[data-name$='.xlsx']:before,
+  &[data-name$='.xlsm']:before,
+  &[data-name$='.xlsb']:before,
+  &[data-name$='.xltm']:before,
+	&[data-name$='.xlam']:before,
+	&[data-name$='.csv']:before {
     color: @icon-color-exel;
     content: @icon-exel;
   }
@@ -100,10 +125,22 @@
     content: @icon-gulp;
   }
 
-  // HTML
-  &[data-name$='.html']:before {
+	// Twig
+  &[data-name$='.html.twig']:before {
+		color: @icon-color-twig;
+		content: @icon-html;
+	}
+
+	// HTML
+	&[data-name$='.html']:before {
     color: @icon-color-html;
     content: @icon-html;
+  }
+
+	// Handlebars
+	&[data-name$='.hbs']:before {
+    color: @icon-color-handlebars;
+    content: @icon-handlebars;
   }
 
 	// Images
@@ -118,9 +155,13 @@
     content: @icon-jade;
   }
 
-  // @icon-color-json: #F1D06D; // JSON
+  // Julia
+  &[data-name$='.jl']:before {
+    color: @icon-color-julia;
+    content: @icon-julia;
+  }
+
   // @icon-color-karma: #35b99f; // KARMA
-  // @icon-color-license: #BCA784; // LICENSE
 
 	// Less
 	&[data-name$='.less']:before {
@@ -128,7 +169,7 @@
 		content: @icon-less;
 	}
 
-	// Less
+	// License
 	&[data-name='LICENSE']:before {
 		color: @icon-color-license;
 		content: @icon-license;
@@ -152,6 +193,19 @@
     content: @icon-php;
   }
 
+  // Python
+  &[data-name$='.py']:before {
+    color: @icon-color-python;
+    content: @icon-python;
+  }
+
+	// Phtml
+	&[data-name$='.phtml']:before {
+		color: @icon-color-php;
+		content: @icon-html;
+	}
+
+
 	// React
   &[data-name$='.jsx']:before {
     color: @icon-color-react;
@@ -170,8 +224,15 @@
     content: @icon-sql;
   }
 
+	// Stylus
+  &[data-name$='.styl']:before {
+    color: @icon-color-stylus;
+    content: @icon-stylus;
+  }
+
 	// Txt
-  &[data-name$='.txt']:before {
+  &[data-name$='.doc']:before,
+	&[data-name$='.txt']:before {
     color: @icon-color-txt;
     content: @icon-txt;
   }

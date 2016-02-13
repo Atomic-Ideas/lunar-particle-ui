@@ -6,15 +6,16 @@
 @text-color-selected:   white;
 
 @text-color-info:    rgb(100, 148, 237);
-@text-color-success: rgb(115, 201, 144);
+// @text-color-success: rgb(32, 182, 132);
+@text-color-success: lime;
 @text-color-warning: rgb(226, 192, 141);
 @text-color-error:   rgb(255, 99, 71);
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
 @text-color-renamed: @text-color-info;
-// @text-color-modified: #f1dd3f;
-@text-color-modified: #F1D06D;
+@text-color-modified: #f1dd3f;
+// @text-color-modified: #F1D06D;
 @text-color-removed: @text-color-error;
 
 @background-color-info:    rgb(0, 136, 255);
@@ -107,35 +108,46 @@
 @git-modified: rgb(220,205,105);
 @git-removed: rgb(206,64,69);
 
+// COLORS
+@dark-green: #467a39;
+@pool-green: #35b99f;
+@lime-green: #9FCA56;
+
 // ICONS COLORS
 
 @icon-color-bower: #F0582B; // BOWER
 @icon-color-css: #29A8DE; // CSS
-@icon-color-ejs: #467a39; // EJS
-@icon-color-exel: #467a39; // EJS
+@icon-color-cs: #BCA784 ; // CoffeeScript
+@icon-color-cpp: #29A8DE; // CPP
+@icon-color-ejs: @dark-green; // EJS
+@icon-color-exel: @dark-green; // EJS
 @icon-color-file-directory: #FAA91A; // FILE DIRECTORY
 @icon-color-git: gainsboro; // Git
 @icon-color-grunt: #FAA91A; // Grunt
 @icon-color-gulp: #EE4845; // Gulp
 @icon-color-hidden: #40535B; // Hidden files
 @icon-color-html: #F26621; // HTML
+@icon-color-handlebars: #F26621; // Handlebars
 @icon-color-favico: #f1dd3f; // Favicon
 @icon-color-img: #7c6ec4; // Images
-@icon-color-jade: #9FCA56; // Jade
+@icon-color-jade: @lime-green; // Jade
 @icon-color-js: #1cb5f6; // JavaScript
 @icon-color-json: gainsboro; // JSON
-@icon-color-karma: #35b99f; // KARMA
+@icon-color-julia: #CE6499; // Julia
+@icon-color-karma: @pool-green; // KARMA
 @icon-color-license: white; // License
 @icon-color-less: #29A8DE; // Less
-@icon-color-license: #BCA784; // LICENSE
 @icon-color-md: gainsboro; // Markdown
 @icon-color-npm: #CD3631; // NPM
 @icon-color-php: #755de6; // PHP
+@icon-color-python: @lime-green; // Python
 @icon-color-react: #29A8DE; // REPOSITORY
 @icon-color-repo: gainsboro; // REPOSITORY
 @icon-color-sass: #CE6499; // SASS
 @icon-color-sql: #FAA91A; // SQL
 @icon-color-settings: #AAA;
+@icon-color-stylus: @lime-green; // Stylus
+@icon-color-twig: @pool-green; // Txt
 @icon-color-txt: gainsboro; // Txt
 @icon-color-xml: #F79451; // XML
 @icon-color-yml: #9FCA56; // YML
@@ -144,6 +156,8 @@
 
 @icon-bower: '\e61a';
 @icon-css: '\e90e';
+@icon-cs: '\e915';
+@icon-cpp: '\e914';
 @icon-default: '\e912';
 @icon-ejs: '\e907';
 @icon-exel: '\e913';
@@ -155,20 +169,24 @@
 @icon-grunt: '\e611';
 @icon-gulp: '\e610';
 @icon-html: '\e907';
+@icon-handlebars: '\e60f';
 @icon-img: '\e90d';
 @icon-jade: '\e907';
 @icon-js: '\e60c';
 @icon-json: '\e90f';
+@icon-julia: '\e61e';
 @icon-license: '\e911';
 @icon-less: '\e90e';
 @icon-npm: '\e906';
 @icon-md: '\e909';
 @icon-php: '\e608';
+@icon-python: '\e606';
 @icon-react: '\e620';
 @icon-repo-expanded: '\e90b';
 @icon-repo-collapsed: '\e910';
 @icon-sass: '\e603';
 @icon-songs: '\e902';
+@icon-stylus: '\e600';
 @icon-sql: '\e90c';
 @icon-txt: '\e90a';
 @icon-xml: '\e904';
