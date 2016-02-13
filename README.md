@@ -19,20 +19,4 @@ Installation
 Preview
 -----------
 
-**Singular Icons!**
-
-![Screenshot](Screenshot from 2016-02-12-tree-view.png)
-
-**It puts an icon after changed/modified repository folders/files.**
-
-![Screenshot](Screenshot from 2016-02-12-git-status.png)
-
-**Awesome layout!**
-
-![Screenshot](Screenshot from 2016-02-12-part1.png)
-![Screenshot](Screenshot from 2016-02-12-part2.png)
-![Screenshot](Screenshot from 2016-02-12-part3.png)
-
-**Different icons to collapsed/expanded folders and repo. folders.**
-
-![Screenshot](Screenshot from 2016-02-12.png)
+![Screenshot](https://github.com/Atomic-Ideas/screenshots/blob/master/lunar-particle-ui.png)
