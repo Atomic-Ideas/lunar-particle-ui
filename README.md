@@ -1,6 +1,6 @@
 Lunar Particle UI Theme
 =========
-Dark theme emphasizing the Universe ! Let's got coding with stars, buddy!
+Dark theme emphasizing the Universe ! Let's code with stars, matey!
 
 Description
 ----------------
